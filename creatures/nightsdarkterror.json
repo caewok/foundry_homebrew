@@ -138,6 +138,138 @@
 					]
 				}
 			]
+		},
+		{
+	"name": "Living Statute, Rock/Ooze",
+	"size": "L",
+	"type": "construct",
+	"source": "Kender",
+	"alignment": [
+		"N"
+	],
+	"ac": [
+		{
+			"ac": 14,
+			"from": [
+				"natural armor"
+			]
 		}
+	],
+	"hp": {
+		"formula": "10d10 + 30",
+		"average": 85
+	},
+	"speed": {
+		"walk": 15
+	},
+	"str": 18,
+	"dex": 9,
+	"con": 16,
+	"int": 3,
+	"wis": 8,
+	"cha": 7,
+	"passive": 9,
+	"cr": "5",
+	"shortName": true,
+	"languages": [
+		"Understands the languages of its creator but can't speak."
+	],
+	"languageTags": [
+		"CS"
+	],
+	"save": {
+		"str": "+4",
+		"dex": "-1",
+		"con": "+3",
+		"int": "-4",
+		"wis": "-1",
+		"cha": "-2"
+	},
+	"resist": [
+		{
+			"resist": [
+				"bludgeoning",
+				"piercing",
+				"slashing"
+			],
+			"note": "from weapons that are non-magical"
+		}
+	],
+	"conditionImmune": [
+		"charmed",
+		"exhaustion",
+		"frightened",
+		"paralyzed",
+		"petrified",
+		"poisoned"
+	],
+	"trait": [
+		{
+			"name": "Magic Resistance",
+			"entries": [
+				"The living statute, rock/ooze has advantage on saving throws against spells and other magical effects."
+			]
+		},
+		{
+			"name": "False Appearance",
+			"entries": [
+				"While the living statute, rock/ooze remains motionless, it is indistinguishable from a inanimate statue."
+			]
+		}
+	],
+	"traitTags": [
+		"False Appearance",
+		"Magic Resistance"
+	],
+	"spellcasting": [
+		{
+			"name": "Spellcasting",
+			"will": [
+				"{@spell meld into stone} (self only)"
+			],
+			"type": "spellcasting"
+		}
+	],
+	"action": [
+		{
+			"name": "Multiattack",
+			"entries": [
+				"Living Statute made of rock/ooze makes three attacks on its turn: two with its squirts of grey ooze and one with its slam."
+			]
+		},
+		{
+			"name": "Slam",
+			"entries": [
+				"{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}19 ({@damage 2d10 + 8}) bludgeoning damage."
+			]
+		},
+		{
+			"name": "Grey Ooze Squirt",
+			"entries": [
+				"{@atk rw} {@hit 2} to hit, range 30/120 ft., one target. {@h}4 ({@damage 2d4 - 1}) bludgeoning damage. Ignores targets' AC bonus granted by armor and shield. Any non-magical weapon or armor made of metal that is hit by the grey ooze corrodes. The weapon or armor takes a permanent and cumulative -1 penalty to AC or damage for each successful attack. If the penalty drops the armor to 0 or the weapon damage to 0, respectively, the armor or weapon is destroyed."
+			]
+		}
+	],
+	"actionTags": [
+		"Multiattack"
+	],
+	"damageTags": [
+		"B"
+	],
+	"miscTags": [
+		"MW",
+		"RW"
+	],
+	"fluff": {
+		"entries": [
+			"Created by the Hutaakan civilization. These outwardly resemble normal rock living statues, but have the ability to conceal themselves by merging into the surface of a rock wall, floor or ceiling. In place of hot magma, rock/ooze statues are filled with grey ooze, and can squirt two blobs of ooze per round from their fingertips."
+		]
+	},
+	"environment": [
+		"mountain",
+		"underdark"
+	]
+}
+
   ]
 }
