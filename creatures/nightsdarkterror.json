@@ -1,0 +1,143 @@
+{
+	"_meta": {
+		"sources": [
+			{
+				"json": "NDT",
+				"abbreviation": "NDT",
+				"full": "Night's Dark Terror",
+				"color": "C26136",
+				"version": "",
+				"url": "http://www.pandius.com/B10_Nights_Dark_Terror_5E.pdf",
+				"authors": [
+					"pandius"
+				],
+				"convertedBy": [
+					"caewok"
+				]
+			}
+		],
+		"dateAdded": 1591117986,
+		"dateLastModified": 1591117986
+	},
+	"monster": [
+			{
+			"name": "Wyrd",
+			"size": "M",
+			"type": "undead",
+			"source": "NDT",
+			"alignment": [
+				"C",
+				"E"
+			],
+			"ac": [
+				12
+			],
+			"hp": {
+				"formula": "13d8",
+				"average": 58
+			},
+			"speed": {
+				"walk": 30
+			},
+			"str": 10,
+			"dex": 14,
+			"con": 10,
+			"int": 12,
+			"wis": 11,
+			"cha": 17,
+			"passive": 12,
+			"cr": "4",
+			"senses": [
+				"darkvision 60 ft."
+			],
+			"senseTags": [
+				"D"
+			],
+			"shortName": true,
+			"save": {
+				"wis": "+2",
+				"cha": "+4"
+			},
+			"immune": [
+				"cold",
+				"necrotic",
+				"poison"
+			],
+			"resist": [
+				"acid",
+				"bludgeoning",
+				"fire",
+				"lightning",
+				"thunder",
+				{
+					"resist": [
+						"bludgeoning",
+						"piercing",
+						"slashing"
+					],
+					"note": "from non-magical weapons"
+				}
+			],
+			"conditionImmune": [
+				{
+					"conditionImmune": [
+						"charmed"
+					]
+				},
+				{
+					"conditionImmune": [
+						"exhaustion"
+					]
+				},
+				{
+					"conditionImmune": [
+						"frightened"
+					]
+				},
+				{
+					"conditionImmune": [
+						"paralyzed",
+						"petrified"
+					]
+				},
+				{
+					"conditionImmune": [
+						"poisoned"
+					]
+				}
+			],
+			"action": [
+				{
+					"name": "Glowing Sphere",
+					"entries": [
+						"{@atk mw,rw} {@hit 2} to hit, reach 5 ft. or range 20/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) damage in melee, or 5 ({@damage 1d6 + 2}) damage at range, plus 3 ({@damage 1d6}) necrotic damage."
+					]
+				},
+				{
+					"name": "Multiattack",
+					"entries": [
+						"Wyrd makes two attacks, both with its glowing spheres."
+					]
+				}
+			],
+			"damageTags": [
+				"N"
+			],
+			"miscTags": [
+				"RW",
+				"MW"
+			],
+			"actionTags": [
+				"Multiattack"
+			],
+			"trait": [
+				{
+					"name": "Detect Life",
+					"entries": [
+						"The wyrd can magically sense the presence of a living creature up to 5 miles away. He knows the general direction they are in but not their exact location."
+					]
+				}
+			]
+		}
+  ]
+}
